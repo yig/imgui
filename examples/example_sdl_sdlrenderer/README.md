@@ -21,5 +21,5 @@ c++ `sdl2-config --cflags` -I .. -I ../.. main.cpp ../../backends/imgui_impl_sdl
 
 ```
 brew install sdl2
-c++ `sdl2-config --cflags` -I .. -I ../.. main.cpp ../../backends/imgui_impl_sdl.cpp ../../backends/imgui_impl_sdlrenderer.cpp ../../imgui*.cpp `sdl2-config --libs` -framework OpenGl
+c++ -std=c++11 `sdl2-config --cflags` -I .. -I ../.. -I ../../backends main.cpp ../../backends/imgui_impl_sdl.cpp ../../backends/imgui_impl_sdlrenderer.cpp ../../imgui*.cpp `sdl2-config --libs` -framework OpenGl
 ```
